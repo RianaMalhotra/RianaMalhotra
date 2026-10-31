@@ -7,7 +7,7 @@
 
 <img src="assets/rocket.gif" width="900" alt="Animated pixel-art rocket flying through a purple nebula" />
 
-<img src="assets/rocket-caption.svg" width="900" alt="🚀 Fueled by my GitHub contributions — more activity, bigger flames, faster flight. Updated daily!" />
+<img src="assets/rocket-equation.svg" width="900" alt="Contributions increase rocket speed and flame size. Updated daily." />
 
 *From circuits to code to the skies — I love turning ideas into things that work.*
 
