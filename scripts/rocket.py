@@ -56,8 +56,8 @@ def rocket(d,x,y,flame):
 def make():
     count=contribution_count()
     print('Last seven complete UTC days:',count,'contributions')
-    intensity=min(count/35,1.0)
-    speed=0.65+0.65*intensity
+    intensity=math.log1p(count)/math.log1p(35)
+    speed=0.35+1.25*intensity
     frames=[]
     n=36
     for i in range(n):
@@ -66,7 +66,7 @@ def make():
         d.rectangle((0,42,W,H),fill=MID)
         d.ellipse((252,12,277,37),fill=(113,82,168))
         d.ellipse((258,16,272,30),fill=(162,114,194))
-        offset=int(i*speed*.8)
+        offset=int(i*speed*1.8)
         for layer in range(4):
             yy=44+layer*12
             for j in range(-2,18):
@@ -77,12 +77,12 @@ def make():
             light=(235,226,255) if (i//4+k)%4 else (173,165,218)
             d.rectangle((xx,sy,xx+sz-1,sy+sz-1),fill=light)
             if sz==2:d.rectangle((xx-1,sy+1,xx+2,sy+1),fill=light)
-        progress=(i/n)**(1.3-0.6*intensity)
+        progress=(i/n)**max(0.55, 1.15-0.20*intensity)
         x=int(-36+(W+65)*progress)
         y=int(72+2*math.sin(i*.55))
-        flicker=10+int(16*intensity)+int(5*abs(math.sin(i*1.5)))
+        flicker=10+int(13*intensity)+int(5*abs(math.sin(i*1.5)))
         for p in range(12):
-            px=x-12-(p*11+i*3)%65
+            px=x-12-(p*11+int(i*speed*4))%65
             py=y+int(6*math.sin(p*2+i*.5))
             if 0<=px<W and 0<=py<H:
                 d.rectangle((px,py,px+1,py+1),fill=(255,164,128) if p%2 else (244,130,204))
