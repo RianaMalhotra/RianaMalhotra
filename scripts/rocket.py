@@ -26,10 +26,10 @@ def contribution_count():
     days=[d for w in payload['data']['user']['contributionsCollection']['contributionCalendar']['weeks'] for d in w['contributionDays']]
     return sum(d['contributionCount'] for d in days if since.date().isoformat() <= d['date'] < until.date().isoformat())
 
-W,H,S=240,105,3
-BG=(53,45,87); MID=(83,71,133); CLOUD=(96,82,155)
+W,H,S=300,125,3
+BG=(31,25,57); MID=(64,48,111); CLOUD=(95,72,151)
 random.seed(84)
-stars=[(random.randrange(W),random.randrange(8,H-7),random.choice([1,1,1,2])) for _ in range(52)]
+stars=[(random.randrange(W),random.randrange(8,H-7),random.choice([1,1,1,2])) for _ in range(85)]
 
 def rocket(d,x,y,flame):
     x,y=int(x),int(y)
@@ -63,11 +63,13 @@ def make():
     for i in range(n):
         image=Image.new('RGB',(W,H),BG)
         d=ImageDraw.Draw(image)
-        d.rectangle((0,39,W,H),fill=MID)
+        d.rectangle((0,42,W,H),fill=MID)
+        d.ellipse((252,12,277,37),fill=(113,82,168))
+        d.ellipse((258,16,272,30),fill=(162,114,194))
         offset=int(i*speed*.8)
-        for layer in range(3):
-            yy=40+layer*12
-            for j in range(-2,14):
+        for layer in range(4):
+            yy=44+layer*12
+            for j in range(-2,18):
                 xx=(j*28-offset*(layer+1)//2)%(W+56)-28
                 d.rectangle((xx,yy+(j*7+layer*3)%13,xx+26, yy+11+(j*7+layer*3)%13),fill=CLOUD if layer%2 else MID)
         for k,(sx,sy,sz) in enumerate(stars):
@@ -79,6 +81,11 @@ def make():
         x=int(-36+(W+65)*progress)
         y=int(72+2*math.sin(i*.55))
         flicker=10+int(16*intensity)+int(5*abs(math.sin(i*1.5)))
+        for p in range(12):
+            px=x-12-(p*11+i*3)%65
+            py=y+int(6*math.sin(p*2+i*.5))
+            if 0<=px<W and 0<=py<H:
+                d.rectangle((px,py,px+1,py+1),fill=(255,164,128) if p%2 else (244,130,204))
         rocket(d,x,y,flicker)
         frames.append(image.resize((W*S,H*S),Image.Resampling.NEAREST))
     os.makedirs(os.path.dirname(OUT) or '.',exist_ok=True)
