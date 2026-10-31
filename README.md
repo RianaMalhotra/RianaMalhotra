@@ -1,13 +1,64 @@
 <div align="center">
 
-# ✨ Riana's little corner of the universe
+# ✨ Hey, I'm Riana!
 
-**Computer Engineering · Building things, one commit at a time 🚀**
+**Computer Engineering @ University of Toronto**  
+*Incoming SoC DFX Design Verification Intern @ AMD · Student Pilot ✈️*
 
 <img src="assets/rocket.gif" width="900" alt="Animated pixel-art rocket flying through a purple nebula" />
 
-*Powered by curiosity, caffeine & commits.*
+*Building at the intersection of silicon, software, robotics & aviation.*
 
-<sub>🚀 More contributions = bigger flames and faster flight · Updated daily with GitHub Actions</sub>
+[![Portfolio](https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://RianaMalhotra.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-Projects-56408B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RianaMalhotra?tab=repositories)
+
+</div>
+
+---
+
+### 🌙 A little about me
+
+- 🔬 Exploring **SoC design verification, digital hardware and embedded systems**
+- 🧠 Building with **SystemVerilog, C/C++, Python, cocotb and Verilator**
+- 🌲 Developing **EmberWatch**, a wildfire early-detection and risk-monitoring platform
+- ✈️ Student pilot and aviation enthusiast; I love projects where engineering meets flight
+- 🚀 Always tinkering with new hardware, tools and interactive experiences
+
+### 🛠️ My toolkit
+
+**Hardware & verification**  
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-55428B?style=flat-square) ![Verilog](https://img.shields.io/badge/Verilog-55428B?style=flat-square) ![Cocotb](https://img.shields.io/badge/cocotb-55428B?style=flat-square) ![Verilator](https://img.shields.io/badge/Verilator-55428B?style=flat-square) ![STM32](https://img.shields.io/badge/STM32-55428B?style=flat-square)
+
+**Software & tools**  
+![C++](https://img.shields.io/badge/C++-7659AA?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-7659AA?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-7659AA?style=flat-square&logo=react&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-7659AA?style=flat-square&logo=flask&logoColor=white) ![Git](https://img.shields.io/badge/Git-7659AA?style=flat-square&logo=git&logoColor=white)
+
+### 🌌 Featured projects
+
+| Project | What I'm building |
+|:--|:--|
+| [**RVCore — RISC-V Processor Design & Verification**](https://github.com/RianaMalhotra/RVCore-RISC-V-Processor-Design-Verification) | RISC-V RTL design, simulation, scoreboards and verification |
+| [**Cache Controller RTL & Verification**](https://github.com/RianaMalhotra/Cache-Controller-RTL-Verification) | Set-associative caching, replacement logic and cocotb testing |
+| [**EmberWatch**](https://github.com/RianaMalhotra/EmberWatch) | Wildfire detection and risk visualization using React, Flask and PostGIS |
+| [**BreadCrumb Trail**](https://github.com/RianaMalhotra/BreadCrumb_Trail) | Hardware navigation project combining GNSS and embedded systems |
+| [**Runway Crosswind Calculator**](https://github.com/RianaMalhotra/runway-crosswind-calculator) | Interactive aviation wind-component calculator |
+| [**TransitFlow GIS**](https://github.com/RianaMalhotra/TransitFlow---GIS-for-Commuters) | Routing and pathfinding with C++ graph algorithms |
+
+### 📊 GitHub activity
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RianaMalhotra&layout=compact&theme=tokyonight&hide_border=true" alt="Most-used languages in public repositories" />
+
+<br />
+
+<sub>🚀 Rocket speed and flame size respond to my recent public GitHub contributions · Refreshed daily with GitHub Actions</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+**Thanks for stopping by — see you among the stars! ✨**
 
 </div>
