@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="158" viewBox="0 0 440 158">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#211634"/><stop offset="1" stop-color="#39205D"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#C4A1FF"/><stop offset="1" stop-color="#A56AFF"/></linearGradient></defs>
+<rect width="440" height="158" rx="15" fill="url(#bg)"/><rect x="1" y="1" width="438" height="156" rx="14" fill="none" stroke="#7655A3" stroke-width="2"/>
+<circle cx="394" cy="35" r="29" fill="#6D4298" opacity=".22"/><circle cx="415" cy="70" r="15" fill="#AA84F3" opacity=".12"/>
+<circle cx="22" cy="21" r="2" fill="#F4E8FF"/><circle cx="412" cy="112" r="2" fill="#D8B9FF"/><circle cx="364" cy="17" r="1.5" fill="#D8B9FF"/>
+<rect x="20" y="19" width="38" height="38" rx="10" fill="#55377E"/><text x="39" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#F6E8FF">⌖</text>
+<text x="71" y="36" font-family="Verdana,Arial,sans-serif" font-size="19" font-weight="700" fill="url(#accent)">BreadCrumb Trail</text>
+<text x="71" y="54" font-family="Verdana,Arial,sans-serif" font-size="10.5" fill="#D6C4EB">Embedded Navigation System</text>
+<text x="21" y="87" font-family="Verdana,Arial,sans-serif" font-size="12" fill="#F0E8F8">GNSS-powered navigation prototype</text>
+<rect x="20" y="105" width="399" height="1" fill="#7655A3" opacity=".6"/>
+<text x="21" y="129" font-family="Verdana,Arial,sans-serif" font-size="11" fill="#C8ABF5">GNSS · Embedded · Hardware</text>
+<text x="21" y="147" font-family="Verdana,Arial,sans-serif" font-size="9" fill="#A88BCA">EXPLORE PROJECT  →</text>
+</svg>
