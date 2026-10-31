@@ -3,26 +3,18 @@
 # ✨ Hey, I'm Riana!
 
 **Computer Engineering @ University of Toronto**  
-*Incoming SoC DFX Design Verification Intern @ AMD · Student Pilot ✈️*
+*Interests: SoC Design Verification · Embedded Systems · Robotics · Aviation ✈️*
 
 <img src="assets/rocket.gif" width="900" alt="Animated pixel-art rocket flying through a purple nebula" />
 
 *Building at the intersection of silicon, software, robotics & aviation.*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://RianaMalhotra.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riana-malhotra/)
 [![GitHub](https://img.shields.io/badge/GitHub-Projects-56408B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RianaMalhotra?tab=repositories)
 
 </div>
 
 ---
-
-### 🌙 A little about me
-
-- 🔬 Exploring **SoC design verification, digital hardware and embedded systems**
-- 🧠 Building with **SystemVerilog, C/C++, Python, cocotb and Verilator**
-- 🌲 Developing **EmberWatch**, a wildfire early-detection and risk-monitoring platform
-- ✈️ Student pilot and aviation enthusiast; I love projects where engineering meets flight
-- 🚀 Always tinkering with new hardware, tools and interactive experiences
 
 ### 🛠️ My toolkit
 
@@ -42,18 +34,6 @@
 | [**BreadCrumb Trail**](https://github.com/RianaMalhotra/BreadCrumb_Trail) | Hardware navigation project combining GNSS and embedded systems |
 | [**Runway Crosswind Calculator**](https://github.com/RianaMalhotra/runway-crosswind-calculator) | Interactive aviation wind-component calculator |
 | [**TransitFlow GIS**](https://github.com/RianaMalhotra/TransitFlow---GIS-for-Commuters) | Routing and pathfinding with C++ graph algorithms |
-
-### 📊 GitHub activity
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RianaMalhotra&layout=compact&theme=tokyonight&hide_border=true" alt="Most-used languages in public repositories" />
-
-<br />
-
-<sub>🚀 Rocket speed and flame size respond to my recent public GitHub contributions · Refreshed daily with GitHub Actions</sub>
-
-</div>
 
 ---
 
