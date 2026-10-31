@@ -89,7 +89,9 @@ def make():
         rocket(d,x,y,flicker)
         frames.append(image.resize((W*S,H*S),Image.Resampling.NEAREST))
     os.makedirs(os.path.dirname(OUT) or '.',exist_ok=True)
-    frames[0].save(OUT,save_all=True,append_images=frames[1:],duration=75,loop=0,optimize=True,disposal=2)
+    frame_duration=max(30, round(140/(1+0.85*intensity)))
+    print('Animation frame duration:',frame_duration,'ms; motion speed:',round(speed,2))
+    frames[0].save(OUT,save_all=True,append_images=frames[1:],duration=frame_duration,loop=0,optimize=True,disposal=2)
     print('Wrote',OUT, 'bytes',os.path.getsize(OUT))
 
 if __name__=='__main__':make()
