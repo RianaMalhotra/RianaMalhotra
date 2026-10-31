@@ -7,6 +7,8 @@
 
 <img src="assets/rocket.gif" width="900" alt="Animated pixel-art rocket flying through a purple nebula" />
 
+<sub>🚀 Powered by my GitHub contributions — more commits mean bigger flames and faster flight. Updated daily!</sub>
+
 *Building at the intersection of silicon, software, robotics & aviation.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riana-malhotra/)
