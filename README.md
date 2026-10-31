@@ -3,13 +3,13 @@
 # ✨ Hey, I'm Riana!
 
 **Computer Engineering @ University of Toronto**  
-*Interests: SoC Design Verification · Embedded Systems · Robotics · Aviation ✈️*
+*Interests: Hardware · Embedded Systems · Robotics · Aviation ✈️*
 
 <img src="assets/rocket.gif" width="900" alt="Animated pixel-art rocket flying through a purple nebula" />
 
-<sub>🚀 Powered by my GitHub contributions — more commits mean bigger flames and faster flight. Updated daily!</sub>
+<sub>🚀 Fueled by my GitHub contributions — more activity, bigger flames, faster flight. Updated daily!</sub>
 
-*Building at the intersection of silicon, software, robotics & aviation.*
+*From circuits to code to the skies — I love turning ideas into things that work.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riana-malhotra/)
 [![GitHub](https://img.shields.io/badge/GitHub-Projects-56408B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RianaMalhotra?tab=repositories)
