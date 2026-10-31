@@ -28,14 +28,15 @@
 
 ### 🌌 Featured projects
 
-| Project | What I'm building |
-|:--|:--|
-| [**RVCore — RISC-V Processor Design & Verification**](https://github.com/RianaMalhotra/RVCore-RISC-V-Processor-Design-Verification) | RISC-V RTL design, simulation, scoreboards and verification |
-| [**Cache Controller RTL & Verification**](https://github.com/RianaMalhotra/Cache-Controller-RTL-Verification) | Set-associative caching, replacement logic and cocotb testing |
-| [**EmberWatch**](https://github.com/RianaMalhotra/EmberWatch) | Wildfire detection and risk visualization using React, Flask and PostGIS |
-| [**BreadCrumb Trail**](https://github.com/RianaMalhotra/BreadCrumb_Trail) | Hardware navigation project combining GNSS and embedded systems |
-| [**Runway Crosswind Calculator**](https://github.com/RianaMalhotra/runway-crosswind-calculator) | Interactive aviation wind-component calculator |
-| [**TransitFlow GIS**](https://github.com/RianaMalhotra/TransitFlow---GIS-for-Commuters) | Routing and pathfinding with C++ graph algorithms |
+<div align="center">
+
+| | |
+|:--:|:--:|
+| [<img src="assets/projects/rvcore.svg" alt="rvcore project card" width="100%" />](https://github.com/RianaMalhotra/RVCore-RISC-V-Processor-Design-Verification) | [<img src="assets/projects/cache.svg" alt="cache project card" width="100%" />](https://github.com/RianaMalhotra/Cache-Controller-RTL-Verification) |
+| [<img src="assets/projects/emberwatch.svg" alt="emberwatch project card" width="100%" />](https://github.com/RianaMalhotra/EmberWatch) | [<img src="assets/projects/breadcrumb.svg" alt="breadcrumb project card" width="100%" />](https://github.com/RianaMalhotra/BreadCrumb_Trail) |
+| [<img src="assets/projects/crosswind.svg" alt="crosswind project card" width="100%" />](https://github.com/RianaMalhotra/runway-crosswind-calculator) | [<img src="assets/projects/transitflow.svg" alt="transitflow project card" width="100%" />](https://github.com/RianaMalhotra/TransitFlow---GIS-for-Commuters) |
+
+</div>
 
 ---
 
