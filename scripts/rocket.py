@@ -56,31 +56,34 @@ def rocket(d,x,y,flame):
 def make():
     count=contribution_count()
     print('Last seven complete UTC days:',count,'contributions')
-    intensity=math.log1p(count)/math.log1p(35)
-    speed=0.35+1.25*intensity
+    # Linear, capped response: quiet weeks cruise; busy weeks visibly accelerate.
+    intensity=min(1.0, count/35.0)
+    speed=3.0+15.0*intensity  # rocket pixels per frame (3 -> 18)
+    star_speed=0.6+5.4*intensity
     frames=[]
-    n=36
+    n=60
     for i in range(n):
         image=Image.new('RGB',(W,H),BG)
         d=ImageDraw.Draw(image)
         d.rectangle((0,42,W,H),fill=MID)
         d.ellipse((252,12,277,37),fill=(113,82,168))
         d.ellipse((258,16,272,30),fill=(162,114,194))
-        offset=int(i*speed*1.8)
+        offset=int(i*(0.8+speed*0.7))
         for layer in range(4):
             yy=44+layer*12
             for j in range(-2,18):
                 xx=(j*28-offset*(layer+1)//2)%(W+56)-28
                 d.rectangle((xx,yy+(j*7+layer*3)%13,xx+26, yy+11+(j*7+layer*3)%13),fill=CLOUD if layer%2 else MID)
         for k,(sx,sy,sz) in enumerate(stars):
-            xx=(sx-int(i*speed*(.7+sz*.5)))%W
+            xx=(sx-int(i*star_speed*(.7+sz*.5)))%W
             light=(235,226,255) if (i//4+k)%4 else (173,165,218)
             d.rectangle((xx,sy,xx+sz-1,sy+sz-1),fill=light)
             if sz==2:d.rectangle((xx-1,sy+1,xx+2,sy+1),fill=light)
-        progress=(i/n)**max(0.55, 1.15-0.20*intensity)
-        x=int(-36+(W+65)*progress)
+        # Actual rocket velocity changes with contributions, not just GIF timing.
+        # Wrapping lets high-activity rockets make several passes per animation.
+        x=int(-55+(i*speed)%(W+110))
         y=int(72+2*math.sin(i*.55))
-        flicker=10+int(13*intensity)+int(5*abs(math.sin(i*1.5)))
+        flicker=5+int(27*intensity)+int(4*abs(math.sin(i*1.5)))
         for p in range(12):
             px=x-12-(p*11+int(i*speed*4))%65
             py=y+int(6*math.sin(p*2+i*.5))
@@ -89,8 +92,8 @@ def make():
         rocket(d,x,y,flicker)
         frames.append(image.resize((W*S,H*S),Image.Resampling.NEAREST))
     os.makedirs(os.path.dirname(OUT) or '.',exist_ok=True)
-    frame_duration=max(30, round(140/(1+0.85*intensity)))
-    print('Animation frame duration:',frame_duration,'ms; motion speed:',round(speed,2))
+    frame_duration=90  # fixed playback timing makes movement differences obvious
+    print('Animation frame duration:',frame_duration,'ms; rocket px/frame:',round(speed,2),'star speed:',round(star_speed,2))
     frames[0].save(OUT,save_all=True,append_images=frames[1:],duration=frame_duration,loop=0,optimize=True,disposal=2)
     print('Wrote',OUT, 'bytes',os.path.getsize(OUT))
 
